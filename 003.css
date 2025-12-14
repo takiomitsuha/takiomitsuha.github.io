@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    height: 8vh;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgba(20,0,20,0.5);
+    z-index: 1000;
+}
+
+header h1{
+    padding: 5px 10px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+header nav{
+    justify-content: flex-end;
+    align-content: center;
+    padding: 0px 20px;
+    transition: transform 0.5s ease;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: Trebuchet;
+    color:#fff;
+    margin: 0 15px;
+}
+
+header h1 a{
+    text-decoration: none;
+    font-family: Trebuchet;
+    color:#fff;
+}
+
+header h1 a:hover{
+    color: #DC4942;
+}
+
+header nav a:hover{
+    color: #DC4942;
+}
+
+header nav:hover{
+        transform: scale(1.1);
+}
+
+#navving{
+    position: fixed;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.pagem{
+    position: relative;
+    background-image:url("img/222-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 5%;
+}
+
+.pagem h1{
+    color:transparent;
+    -webkit-text-stroke:1px #FFF ;
+    position: absolute;
+    font-size: 140px;
+    font-family: Impact;
+    letter-spacing: 12px;
+    align-content: flex-end;
+    top:55vh;
+    right: 12vw;
+    text-shadow:#DC4942 10px 8px;
+    transition: transform 0.5s ease;
+}
+
+.pagem h1:hover{
+    transform: scale(1.1);
+}
+
+.page1{
+    flex-direction: column;
+}
+
+.page1 h1{
+    color: #DC4942;
+}
+
+.page1 .gift{
+    background-color: #22092C;
+    width:100vw;
+    flex-basis: 0;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center;
+    position: relative;
+}
+
+.page .gift h1{
+text-align: center;
+position: relative;
+top:-2vh;
+letter-spacing: 10px;
+}
+
+.page1 .gift .word{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+.page1 .gift .word .bone{
+    width: 12vw;
+    height: 30vh;
+    margin: 0 1vw;
+    transition: transform 0.5s ease;
+}
+
+.page1 .gift .word .bone:hover{
+    transform: scale(1.1);
+}
+
+.page1 .gift .word .bone p{
+    color:#DC4942;
+    display: box;
+    width: 10vw;
+    height: 5vh;
+    overflow-wrap: break-word;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin: 2vh auto;
+}
+
+.page1 .gift .word .bone .bonee{
+    background-image: url(img/223-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+
+.page1 .gift .word .bone .bonenm{
+    background-image: url(img/223-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+
+.page1 .gift .word .bone .bonek{
+    background-image: url(img/223-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+
+.page1 .gift .word .bone .boned{
+    background-image: url(img/223-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+
+.page1 .gift .word .bone .boneh{
+    background-image: url(img/223-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 9vw;
+    margin: 0 auto;
+    border-radius: 60%;
+}
+
+.page .manga{
+    background:linear-gradient(#22092C,#461234);
+    width: 100vw;
+    min-height: 60vh;
+    flex-basis: 0;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+}
+
+.page .manga .article .line{
+    border-bottom: 2px solid #DC4942;
+    width: 45%;
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+
+.page .manga .article h1{
+    font-family: serif;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    margin-left: 19vw;
+    margin-top: 8vh;
+    transition: transform 0.5s ease;
+}
+
+.page .manga .article h1:hover{
+    transform: scale(1.1);
+}
+
+.page1 .manga .article p{
+    color: #DC4942;
+    margin-left:20vw;
+    margin-top: 1.5vh;
+    letter-spacing:3.5px;
+    line-height: 28px;
+    overflow-wrap: break-word;
+}
+
+
+.page1 .manga .article{
+    align-content: flex-start;
+    flex-basis: 0;
+    flex-grow: 6;
+}
+
+.page .manga .booking{
+    display: flex;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 4;
+    justify-content: flex-end;
+    margin-right: 2vw;
+}
+
+.page .manga .booking .book1{
+    width: 18vw;
+    height:54vh;
+    background-image: url(img/221-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.page .manga .booking .book2{
+    width: 18vw;
+    height:54vh;
+    background-image: url(img/221-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.page .manga .booking .book1:hover{
+    transform: scale(1.1);
+}
+
+.page .manga .booking .book2:hover{
+    transform: scale(1.1);
+}
+
+button{
+    border: transparent;
+    background-color: #DC4942;
+    color: #FFF;
+    letter-spacing: 3px;
+    width:5vw;
+    height: 4vh;
+    transition: transform 0.5s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.page .manga .bposition{
+    position: absolute;
+    top: 35vh;
+    left: 20vw;
+}
+
+.page2{
+    background: linear-gradient(#461234,#992742);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px #fff solid;
+}
+
+.page2 h1{
+    color: #DC4942;
+    align-self: center;
+    position: relative;
+    top: 5vh;
+    font-size: 72px;
+    letter-spacing: 10px;
+}
+
+.page2 .shop1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    height: 60vh;
+}
+
+.page2 .shop1 .keychain{
+margin: 0 3vw;
+width:20vw;
+background:transparent;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+border:2px #FFF double;
+transition: transform 0.5s ease;
+}
+
+.page2 .shop1 .keychain:hover{
+    transform: scale(1.1);
+}
+
+.page2 .shop1 .keychaine{
+    background-image: url(img/225-6.png);
+    background-repeat: no-repeat;
+    background-size: 16vw 16vw;
+    background-position:2vw 4vh;
+
+}
+
+.page2 .shop1 .keychainnm{
+    background-image: url(img/225-5.png);
+    background-repeat: no-repeat;
+    background-size: 16vw 16vw;
+    background-position: 2vw 4vh;
+}
+
+.page2 .shop1 .keychaink{
+    background-image: url(img/225-4.png);
+    background-repeat: no-repeat;
+    background-size: 16vw 16vw;
+    background-position: 2vw 4vh;
+}
+
+.page2 .shop1 .keychain h2{
+    color: #DC4942;
+    position: relative;
+    bottom: 7vh;
+    left: 2vw;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.page2 .shop1 .keychain p{
+    color: #fff;
+    display: box;
+    width: 16vw;
+    height: 5vh;
+    overflow-wrap: break-word;
+    position: relative;
+    bottom:6vh;
+    left: 2vw;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.page2 .shop1 .keychain button{
+    position: relative;
+    left: 13vw;
+    bottom: 4vh;
+}
+
+.page2 .shop1 .keychain button a{
+    text-decoration: none;
+    color: #FFF;
+}
+.page3{
+    background: linear-gradient(#992742,#DC4942);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.page3 h1{
+    color: #fff;
+    position: relative;
+    top: 5vh;
+    font-size: 72px;
+    letter-spacing: 10px;
+}
+
+.fever{
+    position: absolute;
+    color: #FFF;
+    line-height: 28px;
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+    width: 30vw;
+    top: 35vh;
+    right: 20vw;
+    border-color: #FFF;
+    border-style: double;
+    padding: 20px;
+    transition: transform 0.5s ease;
+}
+
+.fever:hover{
+    transform: scale(1.1);
+}
+
+.feverimg{
+    position: absolute;
+    background-color: #fff;
+    background-image: url(img/226.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 30vw;
+    top: 18vh;
+    left:12vw;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.feverimg:hover{
+    transform: scale(1.1);
+}
+
+.page3 button{
+    position: absolute;
+    border: transparent;
+    background-color:#992742;
+    color: #FFF;
+    letter-spacing: 3px;
+    width:7vw;
+    height: 5vh;
+    transition: transform 0.5s ease;
+    top: 82vh;
+    right:20vw;
+
+}
+
+.page3 button:hover{
+    transform: scale(1.2);
+}
+
+.page3 button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer{
+    background-color: #FFF;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+
+footer p{
+    color: #461234;
+}
+
+footer a{
+    text-decoration: none;
+    color: #22092C;
+    transition: transform 0.5s ease;
+}
+
+.ff :hover{
+    color: #DC4942;
+}
